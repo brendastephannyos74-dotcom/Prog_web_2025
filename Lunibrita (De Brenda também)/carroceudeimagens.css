@@ -1,0 +1,211 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: Roboto;
+    color: rgb(23, 41, 201);
+    background-color: aquamarine;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    border-bottom: 10px ;
+}
+
+*::before,
+*::after{box-sizing: border-box;}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: system-ui, - apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: aquamarine;
+    color: #0f172a;
+    line-height: 1.5;
+}
+
+.topo{
+    padding: 1rem 1.25rem;
+    background: #4b3434;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.marca{
+    margin: 0;
+    font-size: clamp (1.25rem 2.5vw, 1.6rem);
+}
+
+.sub{
+    margin: .25rem 0 0;
+    color: #153d75;
+}
+
+.container{
+    width: min(100%, 280px);
+    margin-inline: auto;
+    padding: 1rem;
+    display: flex;
+}
+
+.grade-produtos{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+@media(max-width: 1200px){
+    .grade-produtos{grid-template-columns: repeat(4, 1fr);}
+}
+
+@media(max-width: 992px){
+    .grade-produtos{grid-template-columns: repeat(3, 1fr);}
+}
+
+@media(max-width: 680px){
+    .grade-produtos{grid-template-columns: repeat(2, 1fr);}
+}
+
+@media(max-width: 420px){
+    .grade-produtos{grid-template-columns: repeat 1fr;}
+}
+
+.card{
+    background: #8d4545;
+    border: 1px solid #074cd6;
+    border-radius: 14px;
+    overflow: hidden; /* recorta a imagem/badges */
+    display: flex;
+    flex-direction: column; /* poe os coisas que mover para outro canto */
+    transition: transform .18s ease box-shadow .18 ease;
+    outline: nome;
+}
+
+.card:hover, .card:focus{
+    transform: translateY(-6px); /*efeito de elevação */
+    box-shadow: 0 14px 35px rgba(2, 8, 23, 0.15);
+}
+
+.card_media{
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+.card_media img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card_badges{
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    display: flex;
+    gap: .35rem;
+    flex-wrap: wrap;
+}
+
+.tag{
+    font-size: .75rem;
+    font-weight: 700;
+    padding: .25rem .5rem;
+    border-radius: 999px;
+    color: #0b1220;
+    background: #e2e8f0;
+    border: 1px solid #cbd5e1;
+}
+
+.tag--choice{
+    background: #ffeeba;
+    border-color: #ffc107;
+}
+
+.tag--promo{
+    background: #ffd6e7;
+    border-color: #ff5fa2;
+}
+
+.tag--super{
+    background: #d1fae5;
+    border-color: #10b981;
+}
+
+.card__contudo{
+    padding: .9rem .9rem 1rem;
+    display: grid;
+    gap: .4rem;
+}
+
+.card__titulo{
+    margin: 0;
+    font-size: .98rem;
+    font-weight: 600;
+    display: -webkit-box; /* Para que serve esse comando? */
+    -webkit-line-clamp: 2; /* Limita para 2 linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.6rem; /* Vai garantir uma altura estável entre os cards */
+}
+
+.preco{
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+}
+
+.preco__atual{
+    color: #0b8b36;
+    font-weight: 800;
+    font-size: 1.05rem;
+}
+
+.preco__antigo{
+    color: #94a3b8;
+    text-decoration: line-through;
+    font-size: .9rem;
+}
+
+.preco__off{
+    color: #ef4444;
+    font-weight: 700;
+    font-size: .85rem;
+}
+
+.avaliacao{
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+}
+
+.estrelas{
+    letter-spacing: 1px;
+    color: #f59e0b;
+    font-size: .9rem;
+}
+
+.avaliacao_nota{
+    color: #334155;
+    font-size: .9rem;
+}
+
+.card_rodape{
+    margin: .25rem 0 0;
+    color: #64748b;
+    font-size: .85rem;
+}
+
+.rodape{
+    text-align: center;
+    color: #64748b;
+    padding: 2rem 1rem 3rem;
+}
