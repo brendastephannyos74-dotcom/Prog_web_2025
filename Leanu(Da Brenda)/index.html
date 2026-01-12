@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>SkinPerfect — Acesso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+</head>
+<body>
+<main class="container">
+  <section class="card">
+    <h1>Entrar</h1>
+
+    <!--Como essa lógica funciona? Onde isso é preenchido? -->
+    {% if error %}
+      <div class="alert alert-error">{{ error }}</div>
+    {% endif %}
+    {% if message %}
+      <div class="alert alert-info">{{ message }}</div>
+    {% endif %}
+
+    <form method="post" action="{{ url_for('login') }}">
+      <label>E-mail
+        <input type="email" name="email" placeholder="seu@email.com" required>
+      </label>
+      <label>Senha
+        <input type="password" name="password" placeholder="••••••••" required>
+      </label>
+      <button type="submit">Entrar</button>
+      <a href="{{ url_for('forgot_password_form') }}" class="link">
+        Esqueci minha senha
+      </a>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Criar conta</h2>
+    <form method="post" action="{{ url_for('register') }}">
+      <label>Nome
+        <input type="text" name="name" placeholder="Seu nome" required>
+      </label>
+      <label>E-mail
+        <input type="email" name="email" placeholder="seu@email.com" required>
+      </label>
+      <label>Senha
+        <input type="password" name="password" placeholder="Mínimo 8 caracteres" required>
+      </label>
+      <label class="terms">
+        <input type="checkbox" name="terms" required>
+        <span>Li e aceito os <a href="#">Termos de Uso</a></span>
+      </label>
+      <button type="submit">Criar conta</button>
+    </form>
+  </section>
+</main>
+</body>
+</html>

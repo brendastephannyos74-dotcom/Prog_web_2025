@@ -1,4 +1,22 @@
-*,
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: Roboto;
+    color: rgb(23, 41, 201);
+    background-color: aquamarine;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    border-bottom: 10px ;
+}
+
 *::before,
 *::after{box-sizing: border-box;}
 
@@ -44,7 +62,7 @@ body{
 }
 
 .grade-produtos{
-    display: grid;
+    display: flex;
     gap: 1rem;
     grid-template-columns: repeat(5, 1fr);
     float: right;

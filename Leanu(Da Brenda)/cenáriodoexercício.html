@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro acesso à área pessoal de autocuidado da Pele Serena</title>
+    <link rel="stylesheet" href="cenáriodoexercício.css"/>
+</head>
+<body>
+      <section class="card">
+        <h2>Criar conta</h2>
+        <form method="post" action="{{ url_for('register') }}">
+          <label>Nome
+            <input type="text" name="name" placeholder="Seu nome" required>
+          </label>
+          <label>E-mail
+            <input type="email" name="email" placeholder="seu@email.com" required>
+          </label>
+          <label>Senha
+            <input type="password" name="password" placeholder="Mínimo 8 caracteres" required>
+          </label>
+          <label class="terms">
+            <input type="checkbox" name="terms" required>
+            <span>Li e aceito os <a href="#">Termos de Uso</a></span>
+          </label>
+        </form>
+      </section>
+    </main>
+    <main>
+      
+    </main>
+    </body>
+    </html>

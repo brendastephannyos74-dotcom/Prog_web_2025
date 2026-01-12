@@ -1,0 +1,59 @@
+<!DocTYPE html> 
+<html lang= "pt-BR">
+<head>   
+    <!--Primeiro passo do cabeçalho: definir metadados essenciais!-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <!--Segundo passo do cabeçalho: colocar um título na aba.-->
+    <title>Atividade trê</title>
+
+    <link rel="stylesheet" href="teseiraatividade.css"/>
+</head>
+<body>
+    <!--HEADER = topo do site com o que você quer. -->
+    <header class="topo">
+        <!--Estou usando um h1 para simbolizar uma logo do site-->
+        <h1 class="marca" id="inicio" >🌟 Site Wed Básico</h1>
+
+        <!--Menu de navegação (nav)-->
+        <nav class="menu" aria-label="Navegação Principal">
+            <!--ul = tag para criar listastas não-ordenadas!-->
+            <ul>
+                <li><a href="#secao-hero"></a></li>
+                <li><a href="#secao-conteudo"></a></li>
+                <li><a href="#secao-tabela"></a></li>
+                <li><a href="#secao-formulario"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- A tag "div" irá nos auxiliar a criar uma seção no corpo de nossa aplicação. --> 
+    <div class="container">
+     <!-- A tag "section" cria uma seção no nosso site -->
+      <section id="tag-inico" class="bloco faixa-gradiente">
+        <h2>Algo simbólico</h2>
+        <p>Texto corpo do site</p>
+
+        <p>
+            <!-- Modo de como inserir link extetno no nosso site. -->
+            <a href="https://www.janeteartes.com" target="_blank" rel="noopener noreferrer">Site do nosso competidor.</a>
+        </p>
+      </section>  
+
+    <section id="tag-galeria" class="bloco">
+        <!-- A tag "code - &alt; &gt;" nos ajudar a inserir textos com tag sem que eles sejam lidos-->
+        <h2>🖼️Galeria com <code>&lt;figure&gt;</code> e <code>&lt;figcaption&gt;</code></h2>
+
+        <figure>
+            <!-- A tag "imag" insere imagem atrvés de uma fonte (src) e um texto (alt)-->
+            <img src="Leonardo_da_Vinci_-_Mona_Lisa_(Louvre,_Paris).jpg" alt="Mona Lisa">
+            <!-- A tag "figcaption" deixa uma legenda para uma imagem -->
+            <figcaption>Figura: Exeplo de como por uma imagem no site.</figcaption>
+        </figure>
+      </section>
+    </div>
+
+
+</body>
+</html>

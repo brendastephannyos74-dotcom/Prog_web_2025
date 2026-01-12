@@ -1,6 +1,6 @@
 *,
 *::before,
-*::after{box-sizing: border-box;}
+*::after {box-sizing: border-box;}
 
 html, body{
     height: 100%;
@@ -8,51 +8,41 @@ html, body{
 
 body{
     margin: 0;
-    font-family: system-ui, - apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-    background: aquamarine;
-    color: #0f172a;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serf;
+    background: #0258a8;
+    color: #1f1f20;
     line-height: 1.5;
 }
 
 .topo{
     padding: 1rem 1.25rem;
-    background: #4b3434;
-    border-bottom: 1px solid #e5e7eb;
+    background: #1cb0d4;
+    border-bottom: 1px solid #1b263d;
 }
 
 .marca{
     margin: 0;
-    font-size: clamp (1.25rem 2.5vw, 1.6rem);
+    font-size: clamp(1.25rem 2.5vw, 1.6rem);
 }
 
 .sub{
     margin: .25rem 0 0;
-    color: #153d75;
+    color: #dee2e7;
 }
 
 .container{
-    width: min(100%, 280px);
-    margin-right: 20px; /*Adiciona 20px de margem á direita*/
+    width: min(100%, 1200px);
+    margin-inline: auto;
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    float: right;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .grade-produtos{
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(5, 1fr);
-    float: right;
-    text-align: right;
-    justify-content: flex-end;
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1200xp){
     .grade-produtos{grid-template-columns: repeat(4, 1fr);}
 }
 
@@ -69,27 +59,26 @@ body{
 }
 
 .card{
-    background: #8d4545;
-    border: 1px solid #074cd6;
+    background: #be79af;
+    border: 1px solid #cdced1;
     border-radius: 14px;
     overflow: hidden; /* recorta a imagem/badges */
     display: flex;
-    flex-direction: column; /* poe os coisas que mover para outro canto */
-    transition: transform .18s ease box-shadow .18 ease;
+    flex-direction: column;
+    transition: transform .18s ease box-shadow .18s ease;
     outline: nome;
-    justify-content: flex-end;
 }
 
 .card:hover, .card:focus{
-    transform: translateY(-6px); /*efeito de elevação */
-    box-shadow: 0 14px 35px rgba(2, 8, 23, 0.15);
+    transform: translateY(-6px); /* efeito de elevação */
+    box-shadow: 0 14px 32px rgba(2, 8, 23, 0.15) ;
 }
 
 .card_media{
     position: relative;
     aspect-ratio: 4/3;
     overflow: hidden;
-    background: #f1f5f9;
+    background: #4a627a;
 }
 
 .card_media img{
@@ -98,7 +87,7 @@ body{
     height: auto;
 }
 
-.card_badges{
+.card__badges{
     position: absolute;
     top: .5rem;
     left: .5rem;
@@ -119,7 +108,7 @@ body{
 
 .tag--choice{
     background: #ffeeba;
-    border-color: #ffc107;
+    border-color: #57544b;
 }
 
 .tag--promo{
@@ -143,7 +132,7 @@ body{
     font-size: .98rem;
     font-weight: 600;
     display: -webkit-box; /* Para que serve esse comando? */
-    -webkit-line-clamp: 2; /* Limita para 2 linhas */
+    -webkit-line-clamp: 2; /* Limita para 2 linha */
     -webkit-box-orient: vertical;
     overflow: hidden;
     min-height: 2.6rem; /* Vai garantir uma altura estável entre os cards */
@@ -162,7 +151,7 @@ body{
 }
 
 .preco__antigo{
-    color: #94a3b8;
+    color: #94a3b4;
     text-decoration: line-through;
     font-size: .9rem;
 }
@@ -179,7 +168,7 @@ body{
     gap: .35rem;
 }
 
-.estrelas{
+.estrela{
     letter-spacing: 1px;
     color: #f59e0b;
     font-size: .9rem;

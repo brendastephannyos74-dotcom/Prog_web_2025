@@ -1,0 +1,18 @@
+html, body{
+    height: 100%;    
+}
+
+body{
+    font-family: Roboto;
+    color: blue;
+    background-color: chocolate;
+}
+
+.topo{
+    display: flex;  /* alinhar logo e menu lado a lado */
+    justify-content: space-between;
+    align-items: center; /* Centraliza os elementos */
+    padding: 15px;
+    background: white;
+    border-bottom: 10px solid #f70505; 
+}
