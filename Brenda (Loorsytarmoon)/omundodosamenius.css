@@ -1,0 +1,17 @@
+html, body{
+    height: 100%;    
+}
+
+body{
+    font-family: Roboto;
+    color: rgb(69, 7, 216);
+    background-color: rgb(175, 94, 241);
+}
+
+.topo{
+    justify-content: space-between;
+    align-items: center; /* Centraliza os elementos */
+    padding: 15px;
+    background: white;
+    border-bottom: 10px solid #f70505; 
+}
